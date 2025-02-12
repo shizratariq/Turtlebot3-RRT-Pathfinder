@@ -1,0 +1,12 @@
+image: /home/admin-lap01/CSCI5551FinalProject/Maps/map_3/map3.png # USE PNG
+resolution: 0.0046
+origin: [0, 0, 0] # [-10.000000, -10.000000, 0.000000]
+# =========
+# image: /home/admin-lap01/map.pgm
+# resolution: 0.0046
+# origin: [0, 0, 0.0]
+# >>>>>>>>>> Long string of text on phone
+negate: 0
+occupied_thresh: 0.65
+free_thresh: 0.196
+

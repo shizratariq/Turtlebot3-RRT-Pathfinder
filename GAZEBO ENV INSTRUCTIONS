@@ -1,0 +1,17 @@
+TO RUN GAZEBO ON SCHOOL LAPTOP
+
+1 - OPEN A TERMINAL, RUN "roscore"
+
+2 - In  new terminal run: "roslaunch turtlebot3_gazebo turtlebot3_empty_world.launch"
+This will open the gazebo environment.
+  -> to import the maze we are using into gazebo, navigate to the insert tab in the upper left corner of Gazebo. Press map3 on the bottom left of the page and you will be able to place the map in the environment.
+
+3 - To move the robot in the gazebo environment, in a new terminal run the command: "roslaunch turtlebot3_teleop turtlebot3_teleop_key.launch"
+
+4 - in a new terminal, run "roslaunch turtlebot3_navigation turtlebot3_navigation.launch map_file:=$HOME/CSCI5551FinalProject/Maps/map_3/map3.yaml"
+  -> this will bring up the map. Place a 2D pose estimate arrow and move the robot to localize it, most of the green dots should begin to disappear.
+  
+Extra commands:
+"rosrun real_robot_challenge nav_goal_client.py 0.5 0.5 180" - moves the robot to a given point/angle
+
+"bash path.sh" - DO NOT USE - original method of making robot move using RRT.
